@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/resume/',
+    publicPath: '',
     css: {
         loaderOptions: {
             less: {
