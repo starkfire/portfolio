@@ -7,11 +7,12 @@ import 'aos/dist/aos.css'
 
 Vue.config.productionTip = false
 
-import { Col, Row, Layout } from 'ant-design-vue'
+import { Col, Row, Layout, Icon } from 'ant-design-vue'
 
 Vue.use(Col)
 Vue.use(Row)
 Vue.use(Layout)
+Vue.use(Icon)
 
 new Vue({
   created() {

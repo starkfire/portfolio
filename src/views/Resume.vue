@@ -2,10 +2,10 @@
 	<div class="portfolio">
         <div class="head">
             <div id="basic" data-aos="fade-left" data-aos-duration="1000">
-                <img src="../assets/img/dev.jpg" />
+                <img id="profile-img" src="../assets/img/dev.jpg" />
                 <div id="info" data-aos="fade-left" data-aos-duration="1500">
                     <p id="name">Pocholo L. Pantoja</p>
-                    <p id="title">Software Developer | Hobbyist</p>
+                    <p id="title">Software Developer & Researcher</p>
                 </div>
             </div>
             <div id="stack" data-aos="fade-up" data-aos-duration="1500">
@@ -98,7 +98,7 @@
                     <div id="item">
                         <p id="head">OpeniT Philippines</p>
                         <p id="body">Intern - Software Quality Assurance (2018)</p>
-                        <p id="subtitle">Designed a PDF Crawler for detecting documentation errors in OpeniT's products.</p>
+                        <p id="subtitle">Developed a PDF Crawler for detecting documentation errors in OpeniT's products.</p>
                     </div>
                 </a-col>
                 <a-col :xs="24" :lg="12" id="topic">
@@ -193,33 +193,33 @@
             <p id="projects-category" data-aos="fade-up" data-aos-duration="1500">Open Source (Public)</p>
             <a-row :gutter="36" id="projects-row" data-aos="fade-up" data-aos-duration="1500">
                 <a-col :xs="24" :lg="6">
-                    <p id="title">RFID Payment Module</p>
+                    <p id="title">Beep for Jeepneys</p>
                     <p id="description">
                         An affordable and lightweight Contactless Payment solution for Public Utility Jeepneys (PUJs).
                         It uses the Raspberry Pi, reloadable RFID cards, MFRC522 RFID Module, and Smartphone GPS for automatic travel cost computation using the Haversine Formula.
                     </p>
-                    <a href="https://github.com/starkfire/MFRC522-RPi3">Source Code</a>
+                    <a href="https://github.com/starkfire/MFRC522-RPi3"><a-icon type="github" /> Source Code</a>
                 </a-col>
                 <a-col :xs="24" :lg="6">
                     <p id="title">Mobile Tor Router</p>
                     <p id="description">
-                        Developed for a 2017 research paper - A plug-and-play solution for setting up an Onion WiFi hotspot which anonymizes all outbound traffic with Tor (no need for LAN clients to install Tor on their machine).
+                        Developed for our 2017 research paper - A plug-and-play solution for setting up a WiFi hotspot which anonymizes traffic for all LAN clients with Tor. Clients also don't need to install Tor.
                     </p>
-                    <a href="https://github.com/KEMOsabe456/Onion-Pi">Source Code</a>
+                    <a href="https://github.com/KEMOsabe456/Onion-Pi"><a-icon type="github" /> Source Code</a>
                 </a-col>
                 <a-col :xs="24" :lg="6">
                     <p id="title">Classicrack</p>
                     <p id="description">
-                        A Python library for implementing and cracking classical ciphers without a secret key.
+                        A Python library for implementing and cracking classical ciphers (without a secret key).
                     </p>
-                    <a href="https://github.com/starkfire/classicrack">Source Code (wip)</a>
+                    <a href="https://github.com/starkfire/classicrack"><a-icon type="github" /> Source Code (wip)</a>
                 </a-col>
                 <a-col :xs="24" :lg="6">
                     <p id="title">FaunaDB ORM</p>
                     <p id="description">
                         A JavaScript ORM for interacting with FaunaDB without FQL (Fauna Query Language).
                     </p>
-                    <a href="https://github.com/starkfire/faun">Source Code (wip)</a>
+                    <a href="https://github.com/starkfire/faun"><a-icon type="github" /> Source Code (wip)</a>
                 </a-col>
             </a-row>
             <p id="projects-category" data-aos="fade-up" data-aos-duration="1500">Closed Source (Private)</p>
@@ -229,21 +229,21 @@
                     <p id="description">
                         Featured in <a href="https://news.abs-cbn.com/focus/10/23/18/disaster-readiness-fisherfolk-apps-are-ph-entries-to-space-apps-challenge">ABS-CBN</a> 
                         and a Global Finalist during the <a href="https://2018.spaceappschallenge.org/locations/makati-city-bonifacio-global-city/">2018 NASA Space Apps Challenge</a>. 
-                        Soteria is designed for wildfire detection, prediction, and analysis. It relies on aggregated data from IoT sensors and satellite data from NASA-FIRMS.
+                        Soteria is designed for wildfire detection, prediction, analysis, and mitigation. It relies on aggregated data from IoT sensors, open weather data, and satellite data from NASA-FIRMS.
                     </p>
                 </a-col>
                 <a-col :xs="24" :lg="8">
                     <p id="title">Passcan</p>
                     <p id="description">
                         An experimental travel pass alternative which also relies on QR Codes but with a different approach to tokenization.
-                        Passcan is tamper-proof and a privacy-preserving alternative to existing tools which supplement contact tracing.
+                        Passcan is designed to be accessible, tamper-proof, and a privacy-preserving alternative to other existing tools which supplement contact tracing.
                     </p>
                 </a-col>
                 <a-col :xs="24" :lg="8">
                     <p id="title">FishNet</p>
                     <p id="description">
-                        An application and a custom Raspberry Pi module designed as a better and more accessible alternative to fish finding equipments.
-                        It uses a custom-trained object detection model for fish classification and predicts their path and density in real-time.
+                        Combines a web application and a cluster of custom RPi modules for data gathering. FishNet is designed as a better alternative to fish
+                        finding tools. It uses a custom-trained object detection model for fish classification, maps their location, and predicts their path and density in real-time.
                     </p>
                 </a-col>
             </a-row>
@@ -258,13 +258,12 @@
                     <p id="title">AI-Driven Traffic Light</p>
                     <p id="description">
                         A traffic light which relies on a convolutional neural network (YOLOv3) for guiding itself based on pedestrian count and traffic density.
-                        Tested in Anyao, Catanauan, Quezon.
                     </p>
                 </a-col>
                 <a-col :xs="24" :lg="8">
                     <p id="title">QRPay</p>
                     <p id="description">
-                        A mobile app built with Ionic and an API for quick drive-thru payments. It is a secure QR Code Payment Solution built on top of the PayMongo API.
+                        A combination of a Node.js API and an Ionic app for quick drive-thru payments. It is a secure QR Code Payment Solution built on top of the PayMongo API.
                     </p>
                 </a-col>
             </a-row>
@@ -278,7 +277,7 @@
                 <a-col :xs="24" :lg="8">
                     <p id="title">Fire Rescue Robot</p>
                     <p id="description">
-                        Featured during the 2016 QSHS Science Fair - a self-guided fire rescue robot using only an RC car, an ultrasonic sensor, and a hacked, on-board motor driver.
+                        Featured during the 2015 QSHS Science Fair - a self-guided fire rescue robot using only an RC car, an ultrasonic sensor, and a hacked, on-board motor driver.
                     </p>
                 </a-col>
                 
@@ -289,6 +288,21 @@
                     </p>
                 </a-col>
             </a-row>
+            <a-row :gutter="36" id="projects-row" data-aos="fade-up" data-aos-duration="1500">
+                <a-col :xs="24" :lg="8">
+                    <p id="title">STT Assistance Tool</p>
+                    <p id="description">
+                        Featured during the 2016 QSHS Science Fair - a Raspberry Pi Module which uses IBM Watson, Api.ai (now called Dialogflow), and CMU Sphinx for converting speech to text.
+                        This project is intended to facilitate educational material delivery for students with hearing disabilities.
+                    </p>
+                </a-col>
+            </a-row>
+        </div>
+        <div class="contact">
+            <a id="facebook" href="#"><a-icon type="facebook" /></a>
+            <a id="github" href="https://github.com/starkfire"><a-icon type="github" /></a>
+            <a id="twitter" href="#"><a-icon type="twitter" /></a>
+            <a id="google" href="#"><a-icon type="google" /></a>
         </div>
 	</div>
 </template>
@@ -303,14 +317,14 @@ export default {
 .head {
     background-color: #0f0f0f;
     min-height: 667px;
-    padding: 5% 20%;
+    padding: 5% 15%;
 
     #basic {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
 
-        img {
+        #profile-img {
             border-radius: 50%;
             height: 200px;
         }
@@ -322,12 +336,13 @@ export default {
         margin: 5% 5%;
         
         #name {
-            font-size: 36px;
+            font-size: 42px;
             font-weight: 700;
+            margin-bottom: 0;
         }
 
         #title {
-            font-size: 18px;
+            font-size: 21px;
             font-weight: 300;
         }
     }
@@ -354,6 +369,34 @@ export default {
     }
 }
 
+@media (max-width: 944px) {
+    .head {
+        padding: 5% 5%;
+
+        #profile-img {
+            display: none;
+        }
+
+        #info {
+            margin: 10% auto;
+
+            & > * {
+                text-align: center;
+            }
+        }
+
+        #stack {
+            #heading {
+                display: none;
+            }
+
+            & > * {
+                text-align: center;
+            }
+        }
+    }
+}
+
 .projects {
     background-color: #0f0f0f;
     color: #fff;
@@ -375,10 +418,58 @@ export default {
     #title {
         font-size: 21px;
         font-weight: 600;
+        margin-top: 8px;
     }
 
     #projects-row {
         margin-bottom: 36px;
+    }
+
+    &:last-child {
+        padding-bottom: 12%;
+    }
+}
+
+@mixin brand-background-transition($color) {
+    &:hover {
+        background-color: $color;
+        transition: background-color 0.4s ease-in-out;
+    }
+}
+
+.contact {
+    text-align: center;
+
+    a {
+        display: inline-block;
+        color: #000;
+        padding: 16px 32px;
+        margin: 5% 5%;
+        border-radius: 12px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    #facebook {
+        @include brand-background-transition(#3b5998);
+    }
+
+    #twitter {
+        @include brand-background-transition(#1da1f2);
+    }
+
+    #github {
+        @include brand-background-transition(#333);
+    }
+
+    #google {
+        @include brand-background-transition(#ea4335);
+    }
+
+    i {
+        font-size: 28px;
     }
 }
 
